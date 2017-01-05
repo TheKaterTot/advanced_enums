@@ -43,7 +43,6 @@ class VendingMachineTest < Minitest::Test
   end
 
   def test_can_gather_just_names_of_snacks
-    skip
     vm = VendingMachine.new
     snack1 = Snack.new("White Castle Burger", 1)
     snack2 = Snack.new("Snickers", 4)
@@ -55,7 +54,6 @@ class VendingMachineTest < Minitest::Test
   end
 
   def test_can_collect_items_by_quantity
-    skip
     vm = VendingMachine.new
     snack1 = Snack.new("White Castle Burger", 1)
     snack2 = Snack.new("Snickers", 4)
@@ -73,7 +71,6 @@ class VendingMachineTest < Minitest::Test
   end
 
   def test_can_collect_all_items_by_first_letter_of_alph
-    skip
     vm = VendingMachine.new
     snack1 = Snack.new("White Castle Burger", 1)
     snack2 = Snack.new("Snickers", 4)
@@ -89,7 +86,6 @@ class VendingMachineTest < Minitest::Test
   end
 
   def test_total_number_of_items_in_vending_machine
-    skip
     vm = VendingMachine.new
     snack1 = Snack.new("White Castle Burger", 1)
     snack2 = Snack.new("Snickers", 4)
