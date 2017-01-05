@@ -35,5 +35,18 @@ attr_reader :inventory
     end
   end
 
+  def first_letters
+    @inventory.reduce("") do |memo, snack|
+      memo += snack.name[0]
+    end
+  end
+
+  def change_indexes
+    num = 0
+    @inventory.map do |snack|
+      num += 1
+    end
+  end
+
 
 end
