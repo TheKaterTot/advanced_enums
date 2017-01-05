@@ -29,5 +29,11 @@ attr_reader :inventory
     end
   end
 
+  def total_num_items
+    @inventory.reduce(0) do |memo, snack|
+      memo += snack.quantity
+    end
+  end
+
 
 end
